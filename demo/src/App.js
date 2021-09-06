@@ -4,8 +4,8 @@ import Welcome from "./Welcome.js";
 function App() {
   return (
     <div className="App">
-      <Greet></Greet>
-      <Welcome> </Welcome>
+      <Greet name="risha"></Greet>
+      <Welcome name="amit"> </Welcome>
       Learn React
     </div>
   );
