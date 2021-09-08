@@ -4,10 +4,10 @@
 
 import React from "react";
 
-//const welcome = () => <h1>Hello</h1>;
 
-const welcome = (props) => {
-  return <h1> {props.name} hello im functional component</h1>;
+const welcome = ({name}) => {
+ // const {name} = props
+  return <h1> {name} hello im functional component</h1>;
 };
 
 export default welcome;

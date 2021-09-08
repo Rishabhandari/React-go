@@ -34,18 +34,16 @@ class Welcome extends Component {
       apple: previousState.apple + 5,
     }));
   }
-  /** this is how we use the previos state 
+  /** this is how we use the previos state
    * notice that the previous state of variable is 5 and then on other click got 10
-   * 
+   *
    */
- 
-
   render() {
+    const { name } = this.props;
+    //destructing props
     return (
       <div>
-        <h1>
-          {this.props.name} Hello class component {this.state.message}
-        </h1>
+        <h1>{name} Hello class component</h1>
         <button onClick={() => this.increment()}>increment</button>
         <br />
         COUNT : {this.state.count} <br />
