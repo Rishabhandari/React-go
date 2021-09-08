@@ -10,6 +10,7 @@ class Welcome extends Component {
       message: "Welcome to js",
       count: 0,
       duplicateCount: 0,
+      apple: 0,
     };
   }
   increment() {
@@ -24,18 +25,35 @@ class Welcome extends Component {
       }
     );
 
-    //  console.log(this.state.count);
-    // here you see the state count is not geeting incremented directly so ,
-    //if you want code to be executed just  after the value incremented use call back functions
+    /** console.log(this.state.count);
+     here you see the state count is not geeting incremented directly so ,
+    if you want code to be executed just  after the value incremented use call back functions **/
   }
+  incrementFive() {
+    this.setState((previousState) => ({
+      apple: previousState.apple + 5,
+    }));
+  }
+  /** this is how we use the previos state 
+   * notice that the previous state of variable is 5 and then on other click got 10
+   * 
+   */
+ 
+
   render() {
     return (
-      <h1>
-        {this.props.name} Hello class component {this.state.message}
+      <div>
+        <h1>
+          {this.props.name} Hello class component {this.state.message}
+        </h1>
         <button onClick={() => this.increment()}>increment</button>
-        COUNT : {this.state.count}
-        new count : {this.state.duplicateCount}
-      </h1>
+        <br />
+        COUNT : {this.state.count} <br />
+        Duplicate Count count : {this.state.duplicateCount}
+        <h2>Using Previous State of Variable</h2>
+        <button onClick={() => this.incrementFive()}>Get Previos State</button>
+        {this.state.apple}
+      </div>
     );
   }
 }
