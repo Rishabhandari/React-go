@@ -1,0 +1,10 @@
+1.Super(): It is used to call the constructor of its parent class. 
+This is required when we need to access some variables of its parent class.
+
+2. Props: It is a special keyword that is used in react stands for properties. Used for passing data from one component to another. 
+Props data is read-only, which means that data coming from the parent should not be changed by child components.
+
+FOR STATES
+1. always make use of set state and never modify state directly
+2.code executed just after set state get the recent state of variables
+3.when you want to update statebased on previous state , pass in function in setstate to get previous state data
