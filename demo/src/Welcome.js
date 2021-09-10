@@ -12,6 +12,7 @@ class Welcome extends Component {
       duplicateCount: 0,
       apple: 0,
     };
+       this.increment = this.increment.bind(this);
   }
   increment() {
     this.setState(
@@ -44,7 +45,7 @@ class Welcome extends Component {
     return (
       <div>
         <h1>{name} Hello class component</h1>
-        <button onClick={() => this.increment()}>increment</button>
+        <button onClick={ this.increment}>increment</button>
         <br />
         COUNT : {this.state.count} <br />
         Duplicate Count count : {this.state.duplicateCount}
