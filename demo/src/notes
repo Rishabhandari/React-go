@@ -8,3 +8,6 @@ FOR STATES
 1. always make use of set state and never modify state directly
 2.code executed just after set state get the recent state of variables
 3.when you want to update statebased on previous state , pass in function in setstate to get previous state data
+
+For Props
+1. Prop passing from child to parent is no way, but we can have a hack for that i.e passing by event handler callback function . 

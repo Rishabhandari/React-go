@@ -3,6 +3,7 @@ import Child from "./Child.js";
 class Parent extends Component {
   constructor() {
     super();
+    //always bind if using event handler in on click
     this.getJobProfile = this.getJobProfile.bind(this);
     this.state = {
       className: "Parent",
