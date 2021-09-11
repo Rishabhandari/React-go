@@ -1,5 +1,6 @@
 import "./App.css";
-import Example from "./ConditionalOperators/Example";
+// import Example from "./ConditionalOperators/Example";
+import ExampleForEach from "./Loops/ExampleForEach";
 // import Parent from "./PropsExample/Parent.js";
 // import Greet from "./Greet.js";
 // import Welcome from "./Welcome.js";
@@ -10,7 +11,8 @@ function App() {
       <Welcome name="amit"> </Welcome> */}
       {/* <Parent></Parent> */}
       Learn React
-      <Example/>
+      {/* <Example /> */}
+      <ExampleForEach />
     </div>
   );
 }
