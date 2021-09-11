@@ -5,11 +5,13 @@ class Parent extends Component {
     super();
     this.getJobProfile = this.getJobProfile.bind(this);
     this.state = {
-      className: "Jeetendra",
+      className: "Parent",
     };
   }
-  getJobProfile() {
-    alert(`message from parent class name ${this.state.className}`);
+  getJobProfile(child) {
+    alert(
+      `message from parent class name ${this.state.className} to  ${child}`
+    );
   }
   render() {
     return (

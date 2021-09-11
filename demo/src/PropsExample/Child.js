@@ -7,7 +7,7 @@ class Child extends Component {
       <div>
         {this.props.name}
         {name}
-        <button onClick={job}>CLICK ME (CHILD)</button>
+        <button onClick={() => job("child name")}>CLICK ME (CHILD)</button>
       </div>
     );
   }
