@@ -1,5 +1,6 @@
 import "./App.css";
-import Parent from "./PropsExample/Parent.js";
+import Example from "./ConditionalOperators/Example";
+// import Parent from "./PropsExample/Parent.js";
 // import Greet from "./Greet.js";
 // import Welcome from "./Welcome.js";
 function App() {
@@ -7,8 +8,9 @@ function App() {
     <div className="App">
       {/* <Greet name="risha"></Greet>
       <Welcome name="amit"> </Welcome> */}
-      <Parent></Parent>
+      {/* <Parent></Parent> */}
       Learn React
+      <Example/>
     </div>
   );
 }
