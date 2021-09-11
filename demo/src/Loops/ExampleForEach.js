@@ -9,14 +9,14 @@ class ExampleForEach extends Component {
     return (
       <h1>
         <br />
-        {siblingList.forEach((sibling) => {
-          sib.push(sibling + " , ");
+        {siblingList.forEach((sibling, index) => {
+          <h1 key={ index}> {sib.push(sibling + " , ")}</h1>;
         })}
         {sib}
         <br />
         {/* By map function , now if inside call back function you need html elements then put it inside  { } */}
-        {siblingList.map((sib) => {
-          return <h3>{sib + "by map "}</h3>;
+        {siblingList.map((sib, index) => {
+          return <h3  key={index}> {sib + "by map "}</h3>;
         })}
       </h1>
     );
