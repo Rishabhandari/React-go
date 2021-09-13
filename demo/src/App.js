@@ -1,6 +1,7 @@
 import "./App.css";
+import Form from "./FormHandling/Form";
 // import Example from "./ConditionalOperators/Example";
-import ExampleForEach from "./Loops/ExampleForEach";
+// import ExampleForEach from "./Loops/ExampleForEach";
 // import Parent from "./PropsExample/Parent.js";
 // import Greet from "./Greet.js";
 // import Welcome from "./Welcome.js";
@@ -12,7 +13,8 @@ function App() {
       {/* <Parent></Parent> */}
       Learn React
       {/* <Example /> */}
-      <ExampleForEach />
+      {/* <ExampleForEach /> */}
+      <Form/>
     </div>
   );
 }
