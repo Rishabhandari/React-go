@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import LifeCycleComponentB from "./LifeCycleComponentB";
 class LifeCycleComponentA extends Component {
   constructor(props) {
     super(props);
@@ -17,10 +17,17 @@ class LifeCycleComponentA extends Component {
   }
   render() {
     console.log("3.LifeCycleComponentA render");
-    return <></>;
+    return (
+      <>
+        <LifeCycleComponentB />
+      </>
+    );
   }
   componentDidMount() {
-    console.log("4.LifeCycleComponentA  componentDidMount");
+    //now if child component is present then parent component mount is called at the end
+    console.log(
+      "4 (last if parent component).LifeCycleComponentA  componentDidMount"
+    );
   }
 }
 export default LifeCycleComponentA;
