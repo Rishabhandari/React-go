@@ -1,6 +1,7 @@
 import "./App.css";
+import ParentHeroComponent from "./ErroBoundaries/ParentHeroComponent";
 // import Form from "./FormHandling/Form";
-import LifeCycleComponentA from "./Lifecycle/LifeCycleComponentA";
+// import LifeCycleComponentA from "./Lifecycle/LifeCycleComponentA";
 // import Example from "./ConditionalOperators/Example";
 // import ExampleForEach from "./Loops/ExampleForEach";
 // import Parent from "./PropsExample/Parent.js";
@@ -15,8 +16,9 @@ function App() {
       Learn React
       {/* <Example /> */}
       {/* <ExampleForEach /> */}
-      {/* <Form/> */}
-      <LifeCycleComponentA />
+      {/* <Form />
+      <LifeCycleComponentA /> */}
+      <ParentHeroComponent />
     </div>
   );
 }
