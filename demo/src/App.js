@@ -1,5 +1,7 @@
 import "./App.css";
-import ParentHeroComponent from "./ErroBoundaries/ParentHeroComponent";
+import CounterClick from "./HigherOrderComponents/CounterClick";
+import CounterMouseHover from "./HigherOrderComponents/CounterMouseHover";
+// import ParentHeroComponent from "./ErroBoundaries/ParentHeroComponent";
 // import Form from "./FormHandling/Form";
 // import LifeCycleComponentA from "./Lifecycle/LifeCycleComponentA";
 // import Example from "./ConditionalOperators/Example";
@@ -18,7 +20,10 @@ function App() {
       {/* <ExampleForEach /> */}
       {/* <Form />
       <LifeCycleComponentA /> */}
-      <ParentHeroComponent />
+      {/* <ParentHeroComponent /> */}
+      <CounterClick />
+      <h1>Counter Mouse Hover</h1>
+      <CounterMouseHover/>
     </div>
   );
 }
