@@ -1,4 +1,5 @@
 import "./App.css";
+import HookCounter from "./Hooks/HookCounter";
 
 // import CounterClick from "./HigherOrderComponents/CounterClick";
 // import CounterMouseHover from "./HigherOrderComponents/CounterMouseHover";
@@ -7,8 +8,8 @@ import "./App.css";
 // import LifeCycleComponentA from "./Lifecycle/LifeCycleComponentA";
 // import Example from "./ConditionalOperators/Example";
 // import ExampleForEach from "./Loops/ExampleForEach";
-import Parent from "./PropsExample/Parent.js";
-import { UserProvider } from "./PropsExample/useContext";
+// import Parent from "./PropsExample/Parent.js";
+// import { UserProvider } from "./PropsExample/useContext";
 // import Greet from "./Greet.js";
 // import Welcome from "./Welcome.js";
 function App() {
@@ -16,9 +17,14 @@ function App() {
     <div className="App">
       {/* <Greet name="risha"></Greet>
       <Welcome name="amit"> </Welcome> */}
-      <UserProvider value="Risha">
-       <Parent/>
-      </UserProvider>
+      {/* for higher order components */}
+
+
+      {/* <UserProvider value="Risha">
+        <Parent />
+      </UserProvider> */}
+
+
       Learn React
       {/* <Example /> */}
       {/* <ExampleForEach /> */}
@@ -27,6 +33,8 @@ function App() {
       {/* <ParentHeroComponent /> */}
       {/* <CounterClick /> */}
       {/* <CounterMouseHover/> */}
+      {/* for hooks  */}
+      <HookCounter />
     </div>
   );
 }
