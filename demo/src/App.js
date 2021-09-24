@@ -1,7 +1,7 @@
 import "./App.css";
-import ObjectHook from "./Hooks/ObjectHook";
+// import ObjectHook from "./Hooks/ObjectHook";
+import ArrayHook from "./Hooks/ArraysHook";
 // import HookCounter from "./Hooks/HookCounter";
-
 // import CounterClick from "./HigherOrderComponents/CounterClick";
 // import CounterMouseHover from "./HigherOrderComponents/CounterMouseHover";
 // import ParentHeroComponent from "./ErroBoundaries/ParentHeroComponent";
@@ -19,13 +19,9 @@ function App() {
       {/* <Greet name="risha"></Greet>
       <Welcome name="amit"> </Welcome> */}
       {/* for higher order components */}
-
-
       {/* <UserProvider value="Risha">
         <Parent />
       </UserProvider> */}
-
-
       Learn React
       {/* <Example /> */}
       {/* <ExampleForEach /> */}
@@ -36,7 +32,8 @@ function App() {
       {/* <CounterMouseHover/> */}
       {/* for hooks  */}
       {/* <HookCounter /> */}
-      <ObjectHook/>
+      {/* <ObjectHook/> */}
+      <ArrayHook />
     </div>
   );
 }
