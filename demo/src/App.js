@@ -1,5 +1,6 @@
 import "./App.css";
-import HookCounter from "./Hooks/HookCounter";
+import ObjectHook from "./Hooks/ObjectHook";
+// import HookCounter from "./Hooks/HookCounter";
 
 // import CounterClick from "./HigherOrderComponents/CounterClick";
 // import CounterMouseHover from "./HigherOrderComponents/CounterMouseHover";
@@ -34,7 +35,8 @@ function App() {
       {/* <CounterClick /> */}
       {/* <CounterMouseHover/> */}
       {/* for hooks  */}
-      <HookCounter />
+      {/* <HookCounter /> */}
+      <ObjectHook/>
     </div>
   );
 }
