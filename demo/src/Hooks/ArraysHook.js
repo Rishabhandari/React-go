@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function ArrayCounter() {
   const [items, setItems] = useState([]);
-  const [rollnum, setRollnum] = useState(0);
+  const [rollnum, setRollnum] = useState("");
   const addItems = () => {
     setItems([
       ...items,
@@ -11,18 +11,26 @@ function ArrayCounter() {
         number: rollnum,
       },
     ]);
-    setRollnum(rollnum + 1);
   };
-
+  const removeItem = (e, index) => {
+    e.preventDefault();
+    setItems(items.filter((todo) => todo.id !== index));
+    
+  };
   return (
     <div>
-      <input type="number" onChange={(e) => setRollnum(e.target.value)} />
+      <input type="text" onChange={(e) => setRollnum(e.target.value)} />
 
       <button onClick={addItems}>Click</button>
       <li>
         {" "}
-        {items.map((item) => {
-          return <h2>{item.number}</h2> ;
+        {items.map((item, index) => {
+          return (
+            <>
+              <h2 key={index}>{item.number} </h2>
+              <span onClick={(e) => removeItem(e, item.id)}> X</span>
+            </>
+          );
         })}
       </li>
       <br />
