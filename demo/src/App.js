@@ -1,6 +1,8 @@
 import "./App.css";
+import Login from "./JwtAuthentication/Login";
+import Register from "./JwtAuthentication/Register";
 // import ObjectHook from "./Hooks/ObjectHook";
-import ArrayHook from "./Hooks/ArraysHook";
+// import ArrayHook from "./Hooks/ArraysHook";
 // import HookCounter from "./Hooks/HookCounter";
 // import CounterClick from "./HigherOrderComponents/CounterClick";
 // import CounterMouseHover from "./HigherOrderComponents/CounterMouseHover";
@@ -33,7 +35,9 @@ function App() {
       {/* for hooks  */}
       {/* <HookCounter /> */}
       {/* <ObjectHook/> */}
-      <ArrayHook />
+      {/* <ArrayHook /> */}
+      {/* <Register /> */}
+      <Login />
     </div>
   );
 }
