@@ -1,6 +1,7 @@
 import "./App.css";
-import Login from "./JwtAuthentication/Login";
-import Register from "./JwtAuthentication/Register";
+import Counters, { Counter } from "./Feature/Counter";
+// import Login from "./JwtAuthentication/Login";
+// import Register from "./JwtAuthentication/Register";
 // import ObjectHook from "./Hooks/ObjectHook";
 // import ArrayHook from "./Hooks/ArraysHook";
 // import HookCounter from "./Hooks/HookCounter";
@@ -37,7 +38,8 @@ function App() {
       {/* <ObjectHook/> */}
       {/* <ArrayHook /> */}
       {/* <Register /> */}
-      <Login />
+      {/* <Login /> */}
+      <Counter/>
     </div>
   );
 }
