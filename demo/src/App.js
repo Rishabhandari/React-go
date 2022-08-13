@@ -1,5 +1,7 @@
+import RoutesData from "./RouteFiles/RoutesData";
 import "./App.css";
-import Counters, { Counter } from "./Feature/Counter";
+import { Contacts } from "./Feature/Contacts";
+
 // import Login from "./JwtAuthentication/Login";
 // import Register from "./JwtAuthentication/Register";
 // import ObjectHook from "./Hooks/ObjectHook";
@@ -39,7 +41,8 @@ function App() {
       {/* <ArrayHook /> */}
       {/* <Register /> */}
       {/* <Login /> */}
-      <Counter/>
+      {/* <Contacts /> */}
+      <RoutesData />
     </div>
   );
 }
